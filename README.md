@@ -21,3 +21,25 @@
 2、设置childview 大小</br>
 　　viewPageGallery.setViewSize(480,800);</br>
 3、往ViewPageGallery里添加子View</br>
+
+</br></br></br>
+Viewpagegallery effects implemented without supportV4 packages !
+ViewPageGalleryInterface Provide a convenient interface:
+```
+　　void scrollToNextScreen();//goto next card</br>
+　　void scrollToLastScreen();//goto last card</br>
+　　void snapToScreen(int whichScreen);//goto specify card</br>
+　　void setMinAlpha(float alpha);//set min alpha</br>
+　　void setMinScale(float scale);//set min scale</br>
+　　void setViewSize(int width, int height);//set childview width and height</br>
+　　void setEnablClickSelect(boolean enalbe);//set enable click</br>
+　　void setPageSelectedListenner(OnPageSelectedListenner listenner);//pageselect listeener</br>
+　　int getCurrentScreen();//get current ccreen</br>
+　　void setShaderBitmap(Bitmap shaderBitmapL, Bitmap shaderBitmapR, int shaderW);//set shader bitmap and shader wudth</br>
+　　void setGap(int mGap);//set card gap</br>
+```
+step1:find this view </br>
+　　ViewPageGallery viewPageGallery = (ViewPageGallery)findViewById(R.id.view_page_gallery);</br>
+step2:set childview size</br>
+　　viewPageGallery.setViewSize(480,800);</br>
+step3:ViewPageGallery add child view</br>
