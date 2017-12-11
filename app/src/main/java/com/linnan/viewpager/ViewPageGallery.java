@@ -136,6 +136,9 @@ public class ViewPageGallery extends ViewGroup implements ViewPageGalleryInterfa
      */
     private boolean isTouchCurrentView(MotionEvent event) {
         View view = getChildAt(curScreen);
+        if (view == null){
+            return false;
+        }
         int[] location = new int[2];
         // 获取控件在屏幕中的位置，返回的数组分别为控件左顶点的 x、y 的值
         view.getLocationOnScreen(location);
